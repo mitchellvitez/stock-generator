@@ -1,2 +1,8 @@
 __pycache__/*
+*.conf
+*.ini
+*.log
+*.pyc
+*.pyr
+*.service
 
