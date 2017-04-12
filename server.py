@@ -13,7 +13,7 @@ def get_price(old_price, volatility=0.02):
 
 @app.route("/")
 def main():
-    return "Get a stream of stock prices from <code>ws://54.196.193.22/stock</code>"
+    return "Get a stream of stock prices from <code>ws:// IP_ADDRESS /stock</code>"
 
 @sockets.route('/stock')
 def echo_socket(socket):
@@ -26,4 +26,3 @@ def echo_socket(socket):
 
 if __name__ == "__main__":
     app.run(host='0.0.0.0', port=8080)
-
